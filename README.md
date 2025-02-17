@@ -1,6 +1,6 @@
 # Projeto API
 
-![imagem local](imagem_readme/Spring.png)
+![imagem local](/imagem_readme/bancodedados/springframework.png)
 
  - [Sobre](#Sobre) 
  - [Primeiros passos](#Primeiros-Passos)
