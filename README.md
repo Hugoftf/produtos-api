@@ -46,7 +46,7 @@ No app, para testar, você utiliza a url do servidor local junto com a requisiç
 
  Nesse projeto estou utilizando um banco de dados em memória H2, criei um arquivo sql com o comando de criar uma tabela de produto com os atributos da minha classe produto, assim, toda vez que eu iniciar o meu spring ele criára a tabela:
 
-![imagem local](/imagem_readme/bancodedados/configuração2.png)
+![imagem local](/imagem_readme/bancodedados/configuração 2.png)
 
 Hora de testar!! Depois de iniciar sem erros, no [browser](https://tecnoblog.net/responde/o-que-e-um-browser/) voce deve digitar o http do local host em conjunto com o path do console h2 da configuração do arquivo yml, ele retornará mais ou menos isso:
 
