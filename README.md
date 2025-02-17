@@ -62,7 +62,26 @@ Se estiver tudo certo, irá retornar a tela inicia com o comando sql de criar a 
 
 ## Mapeamento JPA
 
- 
+ Comecei mapeando minha classe Produtos, utilizando a anotação @Entity para marca-lá como entidade persistente,ou seja, ela representará uma tabela no banco de dados. A anotação @Table é utilizada para especificar o nome tabela no banco de dados, ela não é obrigatória se a tabela tiver o mesmo nome da classe(a JVM entende), seguindo para os campos, a anotação @Column é usada para especificar e customizar o mapeamento de um campo ou atributo de uma classe de entidade para uma coluna de uma tabela no banco de dados, ela permite voce defenir constrains nas colunas também, não é obrigatória se o nome da columna for igual ao nome da variavel, por fim a anotação @Id, é usada para marcar um campo ou atributo em uma classe de entidade como sendo o identificador único (ou chave primária) dessa entidade, ou seja, o campo que será utilizado para identificar de forma única cada registro na tabela do banco de dados: 
+
+![imagem local](/imagem_readme/JPA/classeproduto.png)
+
+Em seguido criei a interface ProdutoRepository no pacote repository, ela tem a anotação @Repository usada para marcar uma classe ou interface como um repositório responsável por acessar dados em um banco de dados ou qualquer outro tipo de armazenamento(Não é obrigatória), ela extends a interface JpaRepository, onde eu preciso indicar qual será a entidade e a classe do meu id, aqui estão todos os metodos para manipular minhas aplicações: 
+
+![imagem local](/imagem_readme/JPA/interfaceProdutoRepository.png)
+
+No próximo passo, eu atualizei minha classe ProdutoController, adicionando um campo de ProdutoRepository e um construtor para iniciar o campo (Quando você usa a anotação @RestController no Spring Framework, juntamente com a injeção de dependência, você não precisa instanciar manualmente o seu repositório porque o Spring gerencia automaticamente os objetos de controle e serviço da sua aplicação. Isso é possível por causa do mecanismo de injeção de dependência (DI), que é uma das principais funcionalidades do Spring), agora no meu metodo salvar eu posso utilizar os metodos da minha interface ProdutoRepository para salvar a entidade no meu banco de dados e também estou gerando um código random da classe UUID para o meu campo ID: 
+
+![imagem local](/imagem_readme/JPA/classeProdutoController.png)
+
+Por fim os testes para vê o funcionamento, depois de rodar o programa sem nenhum problema, retornaremos ao postman para realizar o post com esse novo retorno:
+
+![imagem local](/imagem_readme/JPA/postmanatt.png)
+
+
+E agora no meu banco de dados H2 eu consigo visualizar o meu produto:
+
+![imagem local](/imagem_readme/JPA/retornoh2.png)
 
 ## Tecnologias Usadas
 [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)) / [Spring](https://pt.wikipedia.org/wiki/Spring_Framework)  / [Postman](https://en.wikipedia.org/wiki/Postman_(software))  
