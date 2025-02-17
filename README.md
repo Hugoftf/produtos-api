@@ -6,6 +6,7 @@
  - [Primeiros passos](#Primeiros-Passos)
  - [Configurando Banco de Dados](#Banco-de-Dados)
  - [Mapeamento JPA](#Mapeamento-JPA)
+ - [Rest](#Rest)
  - [Tecnologias](#tecnologias-usadas)
    
 
@@ -82,6 +83,23 @@ Por fim os testes para vê o funcionamento, depois de rodar o programa sem nenhu
 E agora no meu banco de dados H2 eu consigo visualizar o meu produto:
 
 ![imagem local](/imagem_readme/JPA/retornoh2.png)
+
+## Rest
+
+ Agora vou terminar de implementar minhas aplicações rest http, Post, Get, Put e Delete. 
+
+
+### Get
+
+ ![imagem local](/imagem_readme/Rest/getObtendoPorId.png)
+
+ Com a anotação @GetMapping, ela necessita de um ou mais parametros de busca, geralmente se usa por id, mais você pode suar o nome do seu protudo como parametro também, a anotação @PathVariable permite que você capture valores dinâmicos da URL e os passe como parâmetros para o método (Quando você define uma URL com variáveis de caminho (path variables), o Spring usa a anotação @PathVariable para associar essas partes dinâmicas da URL aos parâmetros do método do controlador).
+
+ O retorno depois de você usar o metodo get para buscar um produto no banco de dados por id: 
+
+ ![imagem local](/imagem_readme/Rest/postmanget.png)
+
+ ### Put
 
 ## Tecnologias Usadas
 [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)) / [Spring](https://pt.wikipedia.org/wiki/Spring_Framework)  / [Postman](https://en.wikipedia.org/wiki/Postman_(software))  
