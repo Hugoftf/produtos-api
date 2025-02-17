@@ -11,7 +11,7 @@ Um exemplo de criação e uso básico de uma API com o spring. Utilizei o site "
 
 ![imagem local](imagem_readme/start_spring.png)
 
-No site você consegue configurar que tipo de depndência, linguagem, versão, etc. Para este projeto vou utilzar um banco h2 em memória para exemplicar minha API.
+No site você consegue configurar que tipo de dependência, linguagem, versão, etc. Para este projeto vou utilzar um banco h2 em memória para exemplicar minha API.
 
 ## Primeiros Passos
 
@@ -35,7 +35,7 @@ Para testar meus metodos eu utilizei o aplicativo Postman, Com ele, você pode e
 
 ![imagam local](/imagem_readme/postman/postman_salvar1.png).
 
-No app, para testar, você utiliza a url do servidor local junto com a requisição que você defeniu na classe ProdutosController. No caso agora eu vou utilizar o Post, Você digita os campos definidos na classe produtos corretamente no formato Json, depois disso a magia acontece, ele retorna o protudo criado. 
+No app, para testar, você utiliza a url do servidor local junto com a requisição que você defeniu na classe ProdutosController. No caso agora eu vou utilizar o Post, Você digita os campos definidos na classe produtos corretamente no formato Json, depois disso a magia acontece, se tudo estiver correto, ele retorna o protudo criado e o código 200 Ok. 
 
 ## Tecnologias Usadas
 [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o))  [Spring](https://pt.wikipedia.org/wiki/Spring_Framework)   [Postman](https://en.wikipedia.org/wiki/Postman_(software))  
