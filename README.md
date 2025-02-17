@@ -86,7 +86,7 @@ E agora no meu banco de dados H2 eu consigo visualizar o meu produto:
 
 ## Rest
 
- Agora vou terminar de implementar minhas aplicações rest http, Post, Get, Put e Delete. 
+ Agora vou terminar de implementar minhas aplicações rest http, Post, Get, Put e Delete. Começando por get:  
 
 
 ### Get
@@ -100,6 +100,24 @@ E agora no meu banco de dados H2 eu consigo visualizar o meu produto:
  ![imagem local](/imagem_readme/Rest/postmanget.png)
 
  ### Put
+
+ O put serve para atualizar um objeto existente a partir de um parametro, no caso id, ele possui a anotação @PutMapping com o parametro id na url, a anotação @PathVariable e ele necessita também de um @RequestBody, já que você precisa enviar os novos dados de produto:
+
+ ![imagem local](/imagem_readme/Rest/atualizarporid.png) 
+
+ Você necessita dar um set no id existente para um novo objeto por que não a metodo atualizar no ProdutoRepository, utilizamos o metodo salvar, a jvm entende que estamos atualizando a partir do id setado.
+
+![imagem local](/imagem_readme/Rest/postmanatualizarporid.png)
+
+### Delete
+
+ E por fim o metodo delete com a anotação @DeleteMapping, que necessita também de um parametro, normalmete id, juntamente com o @PathVariable:
+
+![imagem local](/imagem_readme/Rest/restdeleteporid.png) 
+
+Retorno: 
+
+![imagem local](/imagem_readme/Rest/postmandeleteporid.png)
 
 ## Tecnologias Usadas
 [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)) / [Spring](https://pt.wikipedia.org/wiki/Spring_Framework)  / [Postman](https://en.wikipedia.org/wiki/Postman_(software))  
