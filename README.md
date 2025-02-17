@@ -1,8 +1,8 @@
 # Projeto API
 
  - [Sobre](#Sobre) 
- - [Primeiros passos](#Primeiros passos)
- - [Tecnologias](#Tecnologias Usadas)
+ - [Primeiros passos](#Primeirospassos)
+ - [Tecnologias](#TecnologiasUsadas)
 
 
 ## Sobre
@@ -23,7 +23,19 @@ Rodou perfeitamente, e retornou:
 
 ![imagem local](imagem_readme/helloworld.png)
 
+Comecei a preencher meu projeto, Fiz a classe Produtos, ela será minha base para ser manipulada na minha API:
 
+![imagam local](/imagem_readme/classe_produtos/atributos.png)
+
+Criei a Classe ProdutosController com a anotação @RestController, ela servirá como uma ponte através de metodos que fazem requisições: 
+
+![imagam local](/imagem_readme/classe_controller/post_salvar.png)
+
+Para testar meus metodos eu utilizei o aplicativo Postman, Com ele, você pode enviar requisições HTTP para seus servidores, simular o comportamento de clientes em um ambiente de desenvolvimento e visualizar as respostas. 
+
+![imagam local](/imagem_readme/postman/postman_salvar1.png).
+
+No app, para testar, você utiliza a url do servidor local junto com a requisição que você defeniu na classe ProdutosController. No caso agora eu vou utilizar o Post, Você digita os campos definidos na classe produtos corretamente no formato Json, depois disso a magia acontece, ele retorna o protudo criado. 
 
 ## Tecnologias Usadas
-[Postman](https://en.wikipedia.org/wiki/Postman_(software))
+[Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o))  [Spring](https://pt.wikipedia.org/wiki/Spring_Framework)   [Postman](https://en.wikipedia.org/wiki/Postman_(software))  
