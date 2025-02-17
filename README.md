@@ -1,8 +1,8 @@
 # Projeto API
 
  - [Sobre](#Sobre) 
- - [Primeiros passos](#PrimeirosPassos)
- - [Tecnologias](#TecnologiasUsadas)
+ - [Primeiros passos](#Primeiros-Passos)
+ - [Tecnologias](#tecnologias-usadas)
 
 
 ## Sobre
